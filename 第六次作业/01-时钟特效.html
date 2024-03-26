@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时钟特效</title>
+    <script type="text/javascript">
+        function disptime()
+        {
+            var today = new Date();
+            var hh = today.getHours();
+            var mm = today.getMinutes();
+            var ss = today.getSeconds();
+            var apm;
+           
+        if(hh>12)
+        {
+            apm="pm";
+        }
+        if(hh<=12){
+            apm="am";
+        }
+       
+         if(mm<10){
+            mm="0"+mm;
+        }
+        if(ss<10){
+            ss="0"+ss;
+        }
+         document.getElementById("myclock").innerHTML="<h1>现在是："+hh+":"+mm+":"+ss+apm+"<h1>";
+        }
+     var today=setInterval("disptime()",1000);
+    </script>
+</head>
+<body onload="disptime()">
+    <div id="myclock">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园生活</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script src="./jQuery.js"></script>
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+   <style>
+    
+    .tip{
+        position: relative;
+        margin-left:130px;
+        height: 70px;
+        
+       }
+       .tip-a{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+       }
+       .tip>img{
+        height: 68px;
+        position: absolute;
+        left: -80px;
+        top: 0;
+      }
+      .daohang{
+        background-color: rgb(3,148,221);
+        width: 1090px;
+        position: relative;
+        left: 40px;
+      }
+      .daohang>ul>li>a{
+        color: black;
+        font-size: large;
+        font-family: fantasy;
+      }
+    </style>
+   </style>
+</head>
+<body>
+  <div class="tip">
+    <img src="./图片/校标.png" alt="">
+   <div class="tip-a">
+    <a href="./0联系我们.html" target="_blank">联系我们 |</a>
+    <a href="#">学校邮箱</a>
+   </div>
+  </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="./0我的学校.html" target="_blank">网页首页</a></li>
+          <li><a href="./2学校概况.html" target="_blank">学校概况</a></li>
+          <li><a href="./0校园生活.html" target="_blank">校园生活</a></li>
+          <li><a href="./3学校猫猫.html" target="_blank">学校猫猫</a></li>
+          <li><a href="./1学校教学楼.html" target="_blank">学校教学楼</a></li>
+          <li><a href="./0食堂伙食.html" target="_blank">学校美食</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">学校公众号 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./0西石龙井青年.html" target="_blank">西石龙井青年</a></li>
+                <li><a href="https://www.swpu.edu.cn/dj/index.htm" target="_blank">石大先锋</a></li>
+                <li><a href="./0西南石油大学.html" target="_blank">西南石油大学南充校区</a></li>
+              </ul>
+            </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">友情链接 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.chaoxing.com/?index=1" target="_blank">超星学习通</a></li>
+            <li><a href="https://www.swpu.edu.cn/dean/searchList.jsp?wbtreeid=1193" target="_blank">学校教务网</a></li>
+            <li><a href="https://www.icourse163.org/" target="_blank">MOOC中国大学</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www.yiban.cn/" target="_blank">易班</a></li>
+          </ul>
+        </li>
+      </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+        <div class="daohang">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">常用电话</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">教学日历</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">来校路线</a></li>
+              <li role="presentation"><a href="#messages1" aria-controls="messages1" role="tab" data-toggle="tab">作息时间</a></li>
+            </ul>
+          
+            <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <div class="list-group">
+            <button type="button" class="list-group-item"><img src="./图片/常用电话.png" alt=""></button>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+          <button type="button" class="list-group-item"><img style="width: 1080px;" src="./图片/教学日历.jpg" alt=""> </button>
+          </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+          <button type="button" class="list-group-item"><img style="width: 1000px;" src="./图片/来校路线.png" alt=""> </button>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="messages1">
+            <button type="button" class="list-group-item"><img style="width: 1000px;" src="./图片/作息时间.png" alt=""></button>
+            </div>
+    </div>
+    </div>
+</body>
+</html>

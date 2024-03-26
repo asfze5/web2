@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main a{
+            text-decoration: none;
+            color: rgb(176,176,176);
+            display: inline-flex;
+            line-height: 40px;
+            font-size: 13px;
+            padding-left: 10px;
+            padding: 5px;
+        }
+        .main{
+            background-color: rgb(51,51,51);
+        }
+        .main a:hover{
+           color: white;
+        }
+        .main .h1,.main .h2{
+            padding-left: 28px;
+            margin-left: 5px;
+        }
+        .footer a{
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            padding-left: 40px;
+        }
+        li{
+            list-style: none;
+        }
+        .nav{
+            width: auto;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: 20px;
+        }
+        .nav img{
+
+            width: 65px;
+            height: 63px;
+        }
+        .nav a{
+            text-decoration: none;
+            height: 60px;
+            display: inline-flex;
+            color: black;
+            line-height: 60px;
+            padding-left: 15px;
+        }
+        .nav .e{
+            padding-left: 180px;
+        }
+        .subnav{
+            width: 230px;
+            background-color:  rgba(82, 81, 0, 0);
+        }
+        .subnav span{
+            float: right;
+            padding-right: 20px;
+        }
+        .subnav ul a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            padding-left: 40px;
+            
+        }
+        .subnav ul span{
+            float: right;
+            padding-right: 20px;
+            font-weight: bold;
+            font-size: large;
+
+        }
+        .subnav ul li:hover{
+            background-color: orangered;
+        }
+        .subnav ul li{
+           line-height: 56.8px;
+        }
+        .put{
+            height: 35px;
+            right: 0px;
+            position: absolute;
+            display: flex
+        }
+       .banner{
+        position: relative;
+       }
+       .banner .subnav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+       }
+       .pre,.hre{
+        width: 41px;
+        height: 69px;
+        line-height: 69px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 40px;
+        color: #d6d6d6;
+        position: absolute;
+        top: 48%;
+        margin-top: -34px;
+       }
+       .pre:hover,.hre:hover{
+        background-color: #9cA5A4;
+        color: #fff;
+       }
+       .pre{
+        left: 230px;
+       }
+       .hre{
+        right: 0px;
+       }
+       .nav-adv{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 20px;
+        width:200px ;
+       }
+       .nav-adv li{
+        float: right;
+        width: 6px;
+        height: 6px;
+        margin: 5px;
+        border-radius: 50%;
+        border: 2px solid #c7c7c7;
+        background-color: #93918f;
+       
+       }
+       .nav-adv li:hover{
+        background-color: #fff;
+       }
+        </style>
+</head>
+<body>
+    <div class="main">
+        <a href="#">小米官网</a>
+        <a href="#">小米商城</a>
+        <a href="#">MIUI</a>
+        <a href="#">loT</a>
+        <a href="#">云服务</a>
+        <a href="#">天星数科</a>
+        <a href="#">有品小爱开放平台</a>
+        <a href="#">企业团购</a>
+        <a href="#">资质证照</a>
+        <a href="#">协议规则</a>
+        <a href="#">协议规则</a>
+        <a href="#">下载app</a>
+        <a href="#">Select Location</a>
+        <a href="#" class="h1">登录</a>
+        <a href="#">注册</a>
+        <a href="#">消息通知</a>
+        <a href="#" class="h2">购物车(0)</a>
+    </div>
+    <div class="nav">
+        <img src="./mi-logo.png">
+        <div class="e">
+            <a href="#">Xiaomi手机</a>
+            <a href="#">Redmi手机</a>
+            <a href="#">电视</a>
+            <a href="#">笔记本</a>
+            <a href="#">平板</a>
+            <a href="#">家电</a>
+            <a href="#">路由器</a>
+            <a href="#">服务中心</a>
+            <a href="#">社区</a>
+        </div>
+            <div class="put">
+            <input type="text" size="15" maxlength="13" value="Redmi手机A50" >
+            <input id="search_button" type="image" src="search.png">
+            
+        </div>
+    </div>
+    <div class="banner">
+         <img src="./banner3.webp">
+             <div class="subnav">
+                 <ul>
+                     <li><a herf="#">手机<span>&gt;</span></a></li>
+                     <li><a herf="#">电视<span>&gt;</span></a></li>
+                     <li><a herf="#">家电<span>&gt;</span></a></li>
+                     <li><a herf="#">笔记本 平板<span>&gt;</span></a></li>
+                     <li><a herf="#">出行 穿戴<span>&gt;</span></a></li>
+                     <li><a herf="#">耳机 音响<span>&gt;</span></a></li>
+                     <li><a herf="#">健康 儿童<span>&gt;</span></a></li>
+                     <li><a herf="#">生活 箱包<span>&gt;</span></a></li>
+                 </ul>
+             </div>  
+             <a herf="#" class="pre">&lt</a>
+             <a herf="#" class="hre">&gt</a>  
+             <div class="nav-adv">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+             </div>   
+    </div>
+</body>
+</html>

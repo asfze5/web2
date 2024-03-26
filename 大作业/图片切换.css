@@ -1,0 +1,159 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{
+    margin:0;
+    padding:0;
+    border:0;
+}
+ul,ol,li{
+    list-style:none;
+}
+input,button{
+    margin:0;
+    font-size:12px;
+    vertical-align:middle;
+}
+body{
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif; 
+    margin:0 auto;
+}
+table{border-collapse:collapse;
+    border-spacing:0;
+}
+p{
+    line-height:24px
+}
+button:focus{
+    outline: 0;
+}
+.hyh{
+    background: #fff;
+    border: 1px solid #e3e5e7;
+    border-radius: 6px;
+    margin-left: -26px;
+}
+.clearfloat{
+    height:0;
+    font-size:1px;
+    clear:both;
+    line-height:0;
+}
+
+#container{ 
+    width:1200px; 
+    text-align:left;
+    margin:0 auto;
+    color:#9be3fc;
+}
+a{
+    color:#333;
+    text-decoration:none;
+}
+a:hover{
+    color:#00aeec; 
+}
+
+
+.box{
+    width:1198px;
+    border:1px solid #dcdcdc;
+    padding-bottom:15px;
+    margin:0 auto; 
+    margin-top:56px}
+.module-title{
+    position: relative;
+}
+.module-title h3{
+    font-size:12px;
+    font-weight:normal;
+    color:#666666;
+    height:45px;
+    line-height:45px;
+    padding:0px 9px;
+    border-top:2px solid #999999;
+    margin-top:-1px;
+    margin-bottom:5px;
+}
+.module-title ul{
+    right:10px;
+    position:absolute;
+    top:10px;
+}
+.module-title li.next{
+    width:60px;
+    height:20px;
+    line-height:20px;
+}
+.module-title li a{
+    padding-right: 12px;
+    display:block;
+    overflow:hidden;
+    width:100%;
+    cursor:pointer;
+    color:#ffffff;
+    height:100%;
+    background:url(../images/more.png) no-repeat right center;
+    color:#999999;
+}
+#bilibili_item .module-title LI.next a{
+    height:20px;
+    width:60px;
+}
+#bilibili_main{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    width:1180px !important;
+    padding-top: 9px;
+    position: relative;
+    margin:0px auto;
+}
+#bilibili_main ul{
+    width:1180px;
+}
+#bilibili_main LI A.a1{
+    display: block;
+    margin: 0px auto;
+    width: 187px;
+    height: 178px;
+    text-align: center;
+}
+#bilibili_main LI A.sales-product-pic span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0px;
+}
+#bilibili_main LI SPAN.price_symbol{
+    font-size: 23px;
+    LINE-HEIGHT:20px}
+#bilibili_main ul li{
+    width:180px;
+    float:left;
+    margin-right:20px;}
+#bilibili_main ul li a{
+    display:block;
+}
+#bilibili_main ul li a span{
+    display:block;
+    height:30px;
+    line-height:30px; 
+    font-size: 14px;
+    overflow:hidden;
+    color:#666666;
+    text-align:center;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+}
+#bilibili_main ul li a span:hover{
+    color:#00aeec; 
+    text-decoration:underline;}
+#bilibili_main ul li em{
+    font-size:12px;
+    color:#9499a0;
+    font-weight:bold;
+    font-style:normal;
+    height:18px;
+    line-height:18px;
+    overflow:hidden;
+    text-align:center;
+    display:block;
+}

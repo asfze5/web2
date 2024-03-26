@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园风光</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script src="./jQuery.js"></script>
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <style>
+       body{
+          width: 1250px;
+        }
+        .yemian{
+          text-align: center;
+        }
+      * {
+        padding: 0;
+        margin: 0 auto;
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('fonts/icomoon.eot?wr5es');
+            src:  url('fonts/icomoon.eot?wr5es#iefix') format('embedded-opentype'),
+              url('fonts/icomoon.ttf?wr5es') format('truetype'),
+              url('fonts/icomoon.woff?wr5es') format('woff'),
+              url('fonts/icomoon.svg?wr5es#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+          }
+        .main1{
+            height: 110vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: -4px;
+            left: 490px;
+        }
+        main{
+            position: relative;
+            width: 220px;
+            height: 130px;
+            perspective: 800px;
+        }
+        .haha{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }    
+        .but1,.but2{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-65%);
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            color: white;
+            opacity: 0.8;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+            user-select: none;
+        }
+        .but2{        
+            left: -40px;           
+        }
+        .but1{ 
+            right: -40px;
+        }
+        .but1:hover,.but2:hover{
+            box-shadow: inset 0 0 5px rgb(18, 208, 221);
+            opacity: 1;
+        }
+        .but1:active,.but2:active{
+           box-shadow: inset 0 0 5px rgb(18, 208, 221),
+           inset 0 0 10px rgb(18, 208, 221),
+           inset 0 0 15px rgb(18, 208, 221);
+        }
+        .box{
+            position: absolute;
+            width: 140%;
+            height: 120%;
+            transform: rotateY(calc(var(--d) * 45deg)) translateZ(450px)translateX(-40px) translateY(-10px); 
+        }
+        .box img{
+            width: 110%;
+            height: 130%;                    
+        }
+        select:hover {
+            animation-play-state: paused;
+        }
+        #carousel-example-generic{
+         width: 700px;
+         height: 405px;
+         margin-left: 10px;
+         float: left;
+         margin: 0 auto;
+        }
+        #carousel-example-generic>.carousel-inner{
+         width: 700px;
+         height: 405px;
+        }
+        .tip{
+         position: relative;
+         margin-left:130px;
+         height: 70px;
+         
+        }
+        .tip-a{
+         position: absolute;
+         right: 10px;
+         top: 5px;
+        }
+        .tip>img{
+         height: 68px;
+         position: absolute;
+         left: -80px;
+         top: 0;
+       }
+       .biaoti{
+        width: 100%;
+         position: fixed;
+         top: 10px;
+       }
+  </style>
+</head>
+<body>
+  <div class="biaoti">
+    <div class="tip">
+      <img src="./图片/校标.png" alt="">
+     <div class="tip-a">
+      <a href="./0联系我们.html" target="_blank">联系我们 |</a>
+      <a href="#">学校邮箱</a>
+     </div>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="./0我的学校.html" target="_blank">网页首页</a></li>
+            <li><a href="./2学校概况.html" target="_blank">学校概况</a></li>
+            <li><a href="./4校园生活.html" target="_blank">校园生活</a></li>
+            <li><a href="./3学校猫猫.html" target="_blank">学校猫猫</a></li>
+            <li><a href="./1学校教学楼.html" target="_blank">学校教学楼</a></li>
+            <li><a href="./0食堂伙食.html" target="_blank">学校美食</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">学校公众号 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./0西石龙井青年.html" target="_blank">西石龙井青年</a></li>
+                  <li><a href="https://www.swpu.edu.cn/dj/index.htm" target="_blank">石大先锋</a></li>
+                  <li><a href="./0西南石油大学.html" target="_blank">西南石油大学南充校区</a></li>
+                </ul>
+              </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">友情链接 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://www.chaoxing.com/?index=1" target="_blank">超星学习通</a></li>
+              <li><a href="https://www.swpu.edu.cn/dean/searchList.jsp?wbtreeid=1193" target="_blank">学校教务网</a></li>
+              <li><a href="https://www.icourse163.org/" target="_blank">MOOC中国大学</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://www.yiban.cn/" target="_blank">易班</a></li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div></div>
+  <div class="main1">
+    <main id="main">
+        <div class="haha">
+        <div  class="box" style="--d: 0;"> <img src="./图片/风景1.jpg"> </div>
+        <div  class="box" style="--d: 1;"> <img src="./图片/风景10.jpg"> </div> 
+        <div  class="box" style="--d: 2;"> <img src="./图片/风景11.jpg"> </div>
+        <div  class="box" style="--d: 3;"> <img src="./图片/风景12.jpg"> </div>
+        <div  class="box" style="--d: 4;"> <img src="./图片/风景13.jpg"> </div>
+        <div  class="box" style="--d: 5;"> <img src="./图片/风景14.jpg"> </div>
+        <div  class="box" style="--d: 6;"> <img src="./图片/风景15.jpg"> </div>
+        <div  class="box" style="--d: 7;"> <img src="./图片/风景16.jpg"> </div>
+        <div  class="box" style="--d: 8;"> <img src="./图片/风景2.jpg"> </div>
+        <div  class="box" style="--d: 9;"> <img src="./图片/风景5.jpg"> </div>
+        <div  class="box" style="--d: 10;"> <img src="./图片/风景7.jpg"> </div>
+        <div  class="box" style="--d: 11;"> <img src="./图片/风景8.jpg"> </div>
+        <div  class="box" style="--d: 12;"> <img src="./图片/风景9.jpg"> </div>
+        <div  class="box" style="--d: 13;"> <img src="./图片/风景17.jpg"> </div>
+        <div  class="box" style="--d: 14;"> <img src="./图片/风景20.jpg"> </div>
+        <div  class="box" style="--d: 15;"> <img src="./图片/风景18.jpg"> </div>
+        <div  class="box" style="--d: 16;"> <img src="./图片/风景21.jpg"> </div>
+        <div  class="box" style="--d: 17;"> <img src="./图片/风景22.jpg"> </div>
+        <div  class="box" style="--d: 18;"> <img src="./图片/风景23.jpg"> </div>
+        <div  class="box" style="--d: 19;"> <img src="./图片/风景24.jpg"> </div>
+        <div  class="box" style="--d: 20;"> <img src="./图片/风景25.jpg"> </div>
+        <div  class="box" style="--d: 21;"> <img src="./图片/风景26.jpg"> </div>
+        <div  class="box" style="--d: 22;"> <img src="./图片/风景27.jpg"> </div>
+        <div  class="box" style="--d: 23;"> <img src="./图片/风景28.jpg"> </div>
+        <div  class="box" style="--d: 24;"> <img src="./图片/风景30.jpg"> </div>
+    </div>
+    </main>
+    <script>
+        var haha = document.querySelector(".haha");
+        var but1 = document.querySelector(".but1");
+        var but2 = document.querySelector(".but2");
+        var zhuan = 0;
+        var  lunbo =  setInterval(fn,3000);
+         but1.addEventListener('click',function(){
+            zhuan = zhuan - 45;
+            haha.style.cssText = ` transform: rotateY(${zhuan}deg); `;
+        })
+        but1.addEventListener('mouseover',function(){
+            clearInterval(lunbo);
+        });
+        but1.addEventListener('mouseout',function(){
+            lunbo =  setInterval(fn,3000);
+        });
+        
+        but2.addEventListener('click',fn);
+        but2.addEventListener('mouseover',function(){
+            clearInterval(lunbo);
+        });
+        but2.addEventListener('mouseout',function(){
+            lunbo =  setInterval(fn,3000);
+        });
+        function fn(){
+            zhuan = zhuan + 45;
+            haha.style.cssText = ` transform: rotateY(${zhuan}deg); `;
+        }
+       haha.addEventListener('mouseover',function(){
+            clearInterval(lunbo);
+        });
+       haha.addEventListener('mouseout',function(){
+            lunbo =  setInterval(fn,3000);
+        });
+    </script>
+</body>
+</html>
